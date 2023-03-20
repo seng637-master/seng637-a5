@@ -1,22 +1,18 @@
-****SENG 637 - Dependability and Reliability of Software Systems****
-
-> **Assignment #5**
-
-> **Software Reliability Assessment**
-
-  Instructors: 
+****SENG 637 - Dependability and Reliability of Software Systems**
+**
+>   **Assignment \#5**
+>   **Introduction to Testing and Defect (Bug) Tracking**
+>   Instructors: 
 >   -   Dr. Behrouz Far (far@ucalgary.ca)
+>   Department of Electrical and Software Engineering
+>   University of Calgary
 
-> Department of Electrical and Computer Engineering
-
-> University of Calgary
+Due Date: Check D2L for the submission deadline.
 
 > **Summary:**
 > - Install a reliability assessment (reliability growth and reliability demonstration chart) tool.
 > - Run the tool and feed the provided data into it.
 > - Display and discuss the results.
-
-**Due Date: TBD**
 
 # 1 INTRODUCTION
 
@@ -48,20 +44,24 @@ The testing tool to be used in this part, is
 
 
 ## 2.3 SYSTEM UNDER TEST
-
-The system to be tested for this part is a hypothetical system and its failure data is attached ([failure-dataset-a5.zip](./failure-dataset-a5.zip)). 
+The system to be tested for this part is a hypothetical system and its failure data is attached ([failure-data-set2.zip](./failure-data-set2.zip)). There will be a few test data files and the students should select one of them.
 
 **Note**:
-  - If you want to use CASRE you <mark>may need to change the dataset </mark>. 
-  - Read readme.txt in failure-dataset-a5.zip to learn about the dataset format
+  - If you want to use C-SFRAT you <mark>may need to change the dataset format </mark>. 
 
 ## 2.4 FAMILIARIZATION
 
-### 2.4.1 INSTALL STRAT
+### 2.4.1 INSTALL SRTAT
 
 1. Get SRTAT-SRE-tool.zip.
 2. It is a Java package that has 4 variations for different operating systems. Install the appropriate version on your system.
+   ```
+   java -Djava.library.path=. -jar SRTAT.jar
+
+   ```
 3. Run and verify its functionalities.
+4. Submitting results using only the 'Geometric' and 'Littlewood and Varral's Bayesian Reliability' models is acceptable if some models do not function on your device.
+5. If the tool does not work on your device, please note that it has been tested and functions properly on Windows 64.
 
 
 ### 2.4.3 Alternative: INSTALL C-SFRAT (**Suggestion** )
@@ -123,7 +123,7 @@ In this assignment, you will use the following tools to analyze the test data pr
 -  RDC-11 (an EXCEL worksheet and macro). 
 ## 3.3 SYSTEM UNDER TEST
 
-The system to be tested for this part is a hypothetical system and its failure data is attached([failure-dataset-a5.zip](./failure-dataset-a5.zip)).  You may need to change the dataset format.
+The system to be tested for this part is a hypothetical system and its failure data is attached ([failure-data-set2.zip](./failure-data-set2.zip)). There will be a few test data files and the students should select one of them.
 
 ## 3.4 FAMILIARIZATION
 
@@ -181,23 +181,23 @@ Students will be required to submit a report on their work in the lab as a group
 
 A portion of the grade for the lab report will be allocated to organization and clarity. The report marking scheme is as follows:
 
-|                                                                           |    |
-|----------------------------------------------------------------------------------------------------------|----|
-| **Reliability Growth Testing (40)**                                                    |   |
-| Result of model comparison (selecting top two models)                                                    | 5  |
-| Result of range analysis (an explanation of which part of data is good for proceeding with the analysis) | 5  |
-| Plots for failure rate and reliability of the SUT for the test data provided                             | 15 |
-|                                                                                                          |    |
-| A discussion on decision making given a target failure rate                                              | 10 |
-|                                                                                                          |    |
-| A discussion on the advantages and disadvantages of reliability growth analysis                          | 5  |
-| **RDC Testing (30)**                                                                                         |    |
-| 3 plots for MTTFmin, twice and half of it for your test data                                             | 15 |
-| Explain your evaluation and justification of how you decide the MTTFmin                                  | 10 |
-| A discussion on the advantages and disadvantages of RDC                                                  | 5  |
-| **Other (15)**                                                                                               |    |
-| Comparison of the results with the Part 1                                                                | 10 |
-| A discussion on similarity and difference of the two techniques. Any lessons learned in this lab?        | 5  |
+|                                                                                                          |     |
+| -------------------------------------------------------------------------------------------------------- | --- |
+| **Reliability Growth Testing (40)**                                                                      |     |
+| Result of model comparison (selecting top two models)                                                    | 5   |
+| Result of range analysis (an explanation of which part of data is good for proceeding with the analysis) | 5   |
+| Plots for failure rate and reliability of the SUT for the test data provided                             | 15  |
+|                                                                                                          |     |
+| A discussion on decision making given a target failure rate                                              | 10  |
+|                                                                                                          |     |
+| A discussion on the advantages and disadvantages of reliability growth analysis                          | 5   |
+| **RDC Testing (30)**                                                                                     |     |
+| 3 plots for MTTFmin, twice and half of it for your test data                                             | 15  |
+| Explain your evaluation and justification of how you decide the MTTFmin                                  | 10  |
+| A discussion on the advantages and disadvantages of RDC                                                  | 5   |
+| **Other (15)**                                                                                           |     |
+| Comparison of the results with the Part 1                                                                | 10  |
+| A discussion on similarity and difference of the two techniques. Any lessons learned in this lab?        | 5   |
 # 6 REFERENCES
 
 1. Open Channel Foundation: [http://www.openchannelsoftware.org/discipline/Reliability_Analysis](http://www.openchannelsoftware.org/discipline/Reliability_Analysis)
